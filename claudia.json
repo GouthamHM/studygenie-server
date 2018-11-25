@@ -1,0 +1,10 @@
+{
+  "lambda": {
+    "role": "Study-Genie-executor",
+    "name": "Study-Genie",
+    "region": "us-east-1"
+  },
+  "api": {
+    "id": "ba78av6mv8"
+  }
+}

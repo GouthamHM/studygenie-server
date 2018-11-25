@@ -1,0 +1,31 @@
+{
+  "name": "Study-Genie",
+  "version": "1.0.0",
+  "description": "Server Side code for Study Genie",
+  "main": "index.js",
+  "dependencies": {
+    "aws-serverless-express": "^3.3.5",
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.18.2",
+    "claudia-api-builder": "^4.1.1",
+    "crypto": "^1.0.1",
+    "express": "^4.16.2",
+    "jsonwebtoken": "^8.1.0",
+    "mongoose": "^4.13.6",
+    "morgan": "^1.9.0",
+    "passport": "^0.4.0",
+    "passport-jwt": "^3.0.1",
+    "passport-local": "^1.0.0"
+  },
+  "devDependencies": {
+    "claudia": "5.1.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "export NODE=dev && node index.js",
+    "build": "export NODE=deploy &&  claudia create --handler lambda.handler --deploy-proxy-api --region us-east-1",
+    "update":"export NODE=deploy &&  claudia update"
+  },
+  "author": "Goutham",
+  "license": "ISC"
+}
